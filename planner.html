@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Planner - Student Success Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🎓 Student Success Hub</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
+                <li><a href="study-tips.html" class="nav-link" data-page="tips">Study Tips</a></li>
+                <li><a href="resources.html" class="nav-link" data-page="resources">Resources</a></li>
+                <li><a href="planner.html" class="nav-link active" data-page="planner">Planner</a></li>
+                <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Assignment Planner</h1>
+            <p>Organize your assignments and stay on top of deadlines</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="planner-layout">
+                <!-- Task Management Panel -->
+                <div class="planner-panel">
+                    <div class="planner-card">
+                        <h2>📝 My Tasks</h2>
+                        
+                        <!-- Add Task Form -->
+                        <div class="add-task-form">
+                            <input 
+                                type="text" 
+                                id="taskInput" 
+                                class="task-input" 
+                                placeholder="Add a new task..." 
+                                aria-label="Enter a new task"
+                            >
+                            <button id="addTaskBtn" class="btn-primary" aria-label="Add task">➕ Add Task</button>
+                        </div>
+
+                        <!-- Task Filters -->
+                        <div class="task-filters">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="pending">Pending</button>
+                            <button class="filter-btn" data-filter="completed">Completed</button>
+                        </div>
+
+                        <!-- Task List -->
+                        <div class="task-list" id="taskList">
+                            <!-- Tasks will be dynamically added here -->
+                        </div>
+
+                        <!-- Empty State -->
+                        <div class="empty-state" id="emptyState">
+                            <p>📋 No tasks yet. Add one to get started!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calendar Panel -->
+                <div class="calendar-panel">
+                    <div class="planner-card">
+                        <h2>📅 Calendar</h2>
+                        
+                        <!-- Month Navigation -->
+                        <div class="calendar-nav">
+                            <button id="prevMonth" class="month-nav-btn" aria-label="Previous month">❮</button>
+                            <h3 id="currentMonth" class="current-month">April 2026</h3>
+                            <button id="nextMonth" class="month-nav-btn" aria-label="Next month">❯</button>
+                        </div>
+
+                        <!-- Calendar Grid -->
+                        <div class="calendar-grid" id="calendar">
+                            <!-- Calendar will be dynamically generated -->
+                        </div>
+
+                        <!-- Stats -->
+                        <div class="task-stats">
+                            <div class="stat">
+                                <span class="stat-label">Total Tasks</span>
+                                <span class="stat-value" id="totalTasks">0</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Completed</span>
+                                <span class="stat-value" id="completedTasks">0</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Progress</span>
+                                <span class="stat-value" id="progressPercent">0%</span>
+                            </div>
+                        </div>
+
+                        <!-- Clear Completed Button -->
+                        <button id="clearCompletedBtn" class="btn-secondary btn-small">🗑️ Clear Completed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Card -->
+    <section class="section">
+        <div class="container">
+            <div class="tips-card-full">
+                <h3>💡 Planner Tips</h3>
+                <ul class="tips-list">
+                    <li><strong>Break it down:</strong> Divide large assignments into smaller tasks with individual deadlines</li>
+                    <li><strong>Set priorities:</strong> Focus on high-impact assignments first</li>
+                    <li><strong>Be realistic:</strong> Give yourself enough time to complete tasks without rushing</li>
+                    <li><strong>Check progress:</strong> Review your progress regularly and adjust your plan as needed</li>
+                    <li><strong>Build buffers:</strong> Finish tasks before the deadline to handle unexpected issues</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Student Success Hub. Built to help students succeed. | <a href="about.html">Contact Us</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

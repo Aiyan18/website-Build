@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Student Success Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🎓 Student Success Hub</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
+                <li><a href="study-tips.html" class="nav-link" data-page="tips">Study Tips</a></li>
+                <li><a href="resources.html" class="nav-link" data-page="resources">Resources</a></li>
+                <li><a href="planner.html" class="nav-link" data-page="planner">Planner</a></li>
+                <li><a href="about.html" class="nav-link active" data-page="about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About Student Success Hub</h1>
+            <p>Empowering students to achieve their academic goals</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <!-- About Section -->
+            <div class="about-content">
+                <div class="about-card">
+                    <h2>🎯 Our Mission</h2>
+                    <p>
+                        Student Success Hub was created to provide every high school student with a centralized resource for academic success. 
+                        We believe that with the right tools, guidance, and organization, every student can achieve their academic goals.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h2>📚 What We Offer</h2>
+                    <ul class="about-list">
+                        <li><strong>Study Tips:</strong> Proven techniques and strategies used by top students</li>
+                        <li><strong>Curated Resources:</strong> Carefully selected learning materials across multiple subjects</li>
+                        <li><strong>Assignment Planner:</strong> Tools to organize assignments and manage deadlines</li>
+                        <li><strong>Motivation:</strong> Daily inspiration to keep you focused and motivated</li>
+                        <li><strong>Organization:</strong> Everything in one place, accessible anytime, anywhere</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h2>🤝 Who This Is For</h2>
+                    <p>
+                        Student Success Hub is designed for high school students who want to:
+                    </p>
+                    <ul class="about-list">
+                        <li>Improve their study methods and academic performance</li>
+                        <li>Find reliable learning resources quickly</li>
+                        <li>Stay organized with assignments and deadlines</li>
+                        <li>Get motivated and inspired during their academic journey</li>
+                        <li>Build good habits for lifelong learning</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h2>✨ Why Choose Student Success Hub?</h2>
+                    <ul class="about-list">
+                        <li><strong>100% Free:</strong> No subscriptions, no hidden costs, completely free</li>
+                        <li><strong>No Sign-up Required:</strong> Start using immediately</li>
+                        <li><strong>Offline Ready:</strong> Your tasks are saved locally in your browser</li>
+                        <li><strong>Mobile Friendly:</strong> Works on phones, tablets, and computers</li>
+                        <li><strong>Simple & Clean:</strong> Easy to navigate, designed for students</li>
+                    </ul>
+                </div>
+
+                <div class="about-card creator">
+                    <h2>👨‍💻 About the Creator</h2>
+                    <p>
+                        This website was built with passion to help students succeed. I understand the challenges of balancing 
+                        multiple classes, assignments, and activities. Student Success Hub is my way of giving back to students everywhere.
+                    </p>
+                    <p>
+                        Built with HTML5, CSS3, and vanilla JavaScript • Hosted on GitHub Pages
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Have feedback, suggestions, or found a bug? We'd love to hear from you!</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="contactName">Name</label>
+                    <input 
+                        type="text" 
+                        id="contactName" 
+                        name="name" 
+                        placeholder="Your name" 
+                        required
+                        aria-label="Your name"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email</label>
+                    <input 
+                        type="email" 
+                        id="contactEmail" 
+                        name="email" 
+                        placeholder="your@email.com" 
+                        required
+                        aria-label="Your email"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea 
+                        id="contactMessage" 
+                        name="message" 
+                        placeholder="Your message..." 
+                        rows="6" 
+                        required
+                        aria-label="Your message"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">✉️ Send Message</button>
+                <p class="form-note" id="formNote"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Student Success Hub. Built to help students succeed. | <a href="about.html">Contact Us</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
